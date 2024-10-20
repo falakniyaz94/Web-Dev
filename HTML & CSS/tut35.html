@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    :root{
+        --primary-color:aquamarine;
+        --secondary-color:black;
+        --maxw:233px
+    }
+    .box{
+        margin: 10px 12px;
+        width: 20vw;
+        height:20vh;
+        background-color: var(--primary-color);
+        border: 2px solid var(--secondary-color);
+    }
+    .container{
+        margin: auto;
+        max-width: var(--maxw);
+        height:30vh;
+        display: flex;
+        background-color: rgb(181, 194, 160);
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

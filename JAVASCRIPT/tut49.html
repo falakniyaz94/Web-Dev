@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript | Strings and String Methods</title>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            Lorem ipsum dolor sit.
+        </h1>
+        <div id="content"></div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+             Ullam illum odit sapiente molestiae pariatur? Eius ipsum voluptatibus consequatur
+             perspiciatis, rerum cumque iste tempora sint labore ratione. Quaerat, labore. Nesciunt eaque repellat quisquam! Natus, error?
+        </p>
+    </div>
+    <script>
+        var string="this";
+        var name="falak";
+        var message="hello";
+        var college="ABES";
+        console.log(string+ name +message);
+        //template literal
+        var temp=`${name}is a 'nice' person and she "studies" in ${college}`;
+        /*document.getElementById('content').innerHTML='<h1>'+message+name+'<h1>';*/
+        document.getElementById('content').innerHTML=`<h1> ${message} ${name}<h1>`;
+        console.log(temp);
+        var len= name.length;
+        console.log(`Length of name is${len}`);
+        console.log("hello\n wor\tld\b");
+        var y=new String("this");//string using constructor
+        console.log(y);
+        /*document.getElementById('content').innerHTML='<h3>this is an h3 heading</h3>'*/
+    </script>
+</body>
+</html>

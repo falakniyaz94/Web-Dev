@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction using alert,Promptand confirm</title>
+</head>
+<body>
+    <div class="container">
+        This is the page
+    </div>
+    <script>
+        //Alert in in browser JavaScript-does not return anything
+        // alert("this is a message");
+
+        let age = prompt("What is your  age","Guest");
+        if(age>18){
+            document.write("You are allowed inside club");
+        }
+        else{
+            document.write("You are not allowed inside club");
+        }
+        // document.write(name);
+
+        
+        //CONFIRM
+        let deletePost = confirm("Do you really want to delete the post");
+        if(deletePost){
+            console.log("deleted");
+
+        }
+        else{
+            console.log("not deleted");
+        }
+        console.log(deletePost);
+    </script>
+</body>
+</html>

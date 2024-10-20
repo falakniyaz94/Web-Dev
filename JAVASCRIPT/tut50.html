@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string</title>
+    <script>
+
+        var str="This is a string";
+        console.log(str);
+        //first occurence of string
+        console.log(str.indexOf('is'));
+        //Last occurence of string
+        console.log(str.lastIndexOf('is'));
+        //substring from a string
+        var substr=str.slice(1,6);
+        console.log(substr);    //substring can take negative values but slice cannot
+        var substri=str.substring(1,2);
+        var substr1=str.substr(1,7);    //it extracts length 7 starting from 1 "str.substr(start, len);"
+        //first argument->start string 
+        //second argument->number of characters
+        console.log(substri);
+        console.log('str.substr(start, len): '+substr1);
+        //Replace
+        var replaced=str.replace('string','falak');
+        console.log(str);
+        console.log(replaced);
+        //CASE
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+        //join two strings //+ can also be used
+        var newstring=str.concat('newString');
+        console.log(newstring);
+        //trim removes extra whitespaces from both ends
+        var strWithwhitespaces='     tfctyegcyh        ocoekvco     to  '
+        console.log(strWithwhitespaces)
+        console.log(strWithwhitespaces.trim());
+        //gives the character present at that index 
+        var char2=str.charAt(2);
+        console.log(char2);
+        //gives code of the character present at that index 
+        var char3=str.charCodeAt(2)
+        console.log(char3);
+        
+        //slicing
+        console.log(str[3]);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

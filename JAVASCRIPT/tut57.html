@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js events</title>
+</head>
+<body>
+    <!-- Browser events:
+    click
+    contextmenu
+    mouseover/mouseout
+    mousedown/mouseup
+    submit
+    focus
+     -->
+     <div class="container">
+        <h1>This is my heading</h1>
+        <p id="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, est rerum! Cum expedita reprehenderit mollitia molestias velit facere eum quas officiis odio beatae temporibus itaque illum officia perferendis porro, quos commodi quod, cupiditate nemo consectetur ipsum praesentium. Amet, debitis sunt fugit voluptas iusto voluptates perferendis, atque nobis possimus necessitatibus iste inventore magnam similique! Rerum, incidunt libero architecto iste aperiam nostrum! Fugit dolorem, quibusdam veniam totam consectetur deleniti iste vero corporis illum provident quaerat dignissimos. Minus magni omnis cupiditate harum sed vitae sequi accusantium neque dolores eaque voluptatibus libero impedit voluptatum voluptate fugit provident eos consequatur temporibus animi incidunt asperiores a, recusandae qui adipisci! Magnam ex quis nisi accusantium dolores, iste voluptatem praesentium quam error. Assumenda fuga, quos unde fugiat nam omnis repudiandae incidunt velit atque veniam nemo. Aut, nemo magnam. Voluptate culpa nihil assumenda animi repellendus dignissimos maiores, numquam, eligendi et, dolorem quidem aut tenetur in laboriosam distinctio dolorum fugit rerum. Cupiditate ut aut praesentium neque sit officiis. Culpa iure nemo quos, quasi enim facere architecto tempora id fugit praesentium aliquam laborum quae omnis sint velit necessitatibus voluptates ratione maxime. Amet magni voluptate temporibus, fugit consequuntur voluptas voluptatem dignissimos. Fugiat nostrum reiciendis accusamus tempora ipsa quam amet labore asperiores similique officiis quod fugit alias voluptatum, rerum vero deserunt omnis optio pariatur quis porro cumque inventore odit. Aliquid ab cupiditate et minus ullam, sit consequatur? Tenetur, commodi? Totam a assumenda vel ex quod error!</p>
+     </div>
+     <button id="btn" onclick="hide()">Show/hide</button>
+    <script>
+        function hide(){
+           let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+           para.style.display='none'
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        display: grid;
+        grid-gap:1rem;
+        grid-template-areas: 
+        'navbar navbar navbar navbar'
+        'section section section aside'
+        'footer footer footer footer';
+    }
+    nav{
+        grid-area: navbar;
+    }
+    section{
+        grid-area: section;
+    }
+    aside{
+        grid-area: aside;
+    }
+    footer{
+        grid-area: footer;
+        text-align: center;
+    }
+    .bdr{
+        background-color: wheat;
+        border: 2px solid black;
+    }
+    @media only screen and (max-width:300px){
+        body{
+            background-color: rgb(239, 239, 186);
+        }
+        .container{
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'footer footer footer footer';
+        }
+        aside{
+            display: none;
+        }
+        span{
+            display: block;
+            text-align: center;
+        }
+    }
+    @media (min-width:300px) and (max-width:600px){
+        body{
+            background-color: rgb(159, 226, 229);
+        }
+        .container{
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'footer footer footer footer';
+        }
+        aside{
+            display: none;
+        }
+        span{
+            display: block;
+            text-align: center;
+        }
+    }
+    @media (min-width:600px) and (max-width:800px){
+        body{
+            background-color: rgb(214, 231, 189);
+        }
+        .container{
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer';
+        }
+        span{
+            display: block;
+            text-align: center;
+        }
+    }
+    @media (min-width:800px){
+        body{
+            background-color:   rgb(248, 189, 189);
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>Home</span>
+            <span>About</span>
+            <span>Services</span>
+            <span>Contact</span>
+        </nav>
+        <section class="bdr">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis aut eligendi asperiores repellat, officiis doloremque quis at numquam eius ad, facere iste sit? Dolore a quibusdam impedit mollitia accusantium veniam magnam laboriosam consequuntur nostrum fuga cumque vitae fugiat labore perferendis id ut amet tenetur temporibus, deserunt repudiandae dolor dolorem esse quidem laudantium! Excepturi vero distinctio, impedit doloremque pariatur quas hic cum tenetur fugiat neque rerum aliquam odio ipsa in quia maiores quos. Cupiditate, corrupti voluptate id reiciendis reprehenderit eius in totam, unde sunt necessitatibus perferendis provident impedit ab perspiciatis. Numquam, aliquam nemo ipsum quibusdam libero doloremque veritatis pariatur eius, non, deserunt doloribus qui hic totam. Dignissimos dolorum accusamus soluta, minima rerum animi nesciunt aliquam corrupti est ipsa explicabo assumenda incidunt esse harum quia, sunt aperiam perspiciatis enim? Dolores velit necessitatibus voluptatum molestiae ratione adipisci, odit ad repellendus odio, aut molestias aspernatur fugit ducimus quisquam similique? Similique quod nesciunt ea in facere libero sapiente perspiciatis voluptatem beatae. Architecto sunt iure fugiat numquam, quo ad atque ex minima aperiam repudiandae quas veniam alias? Iusto eius magni labore voluptate et sint adipisci laudantium ratione inventore. Labore saepe similique, ex, non neque quisquam accusantium, fugiat excepturi hic molestiae quos! Accusamus animi laborum nulla, aut quo ad. Itaque, ipsam sint iusto harum facere amet atque voluptate sapiente error delectus sunt velit molestiae neque aut hic debitis? Aliquid vero aperiam debitis maiores nesciunt, blanditiis iusto perspiciatis sequi, laudantium qui illum inventore id laboriosam dignissimos consequatur corrupti natus sit dolorem modi? Quod quidem ducimus, molestias nam enim quae expedita qui natus non libero animi repellat itaque dolor doloribus nobis odit asperiores, ut cupiditate praesentium delectus soluta, voluptate vero. Vel corporis nulla esse saepe dolorum voluptas amet dolores assumenda, sapiente, earum possimus sed aliquid eveniet quaerat blanditiis minima debitis ad consectetur quae vitae unde neque. Cupiditate cumque aperiam incidunt voluptatem, perferendis aliquid corporis unde odio animi repellat! Provident tempora nostrum quas delectus expedita distinctio sint, rem porro temporibus eveniet possimus quos dignissimos rerum aperiam omnis officia veritatis ipsum recusandae minima id, qui praesentium iste modi ex. Incidunt magni exercitationem beatae harum provident hic ipsa id doloribus sapiente saepe? Officia unde expedita quisquam assumenda libero itaque fugiat perferendis fuga et, quaerat ea harum perspiciatis magni repellendus laudantium. Consectetur porro recusandae, ab omnis voluptates accusantium. Dolorum, in. Atque sequi, natus iure, eum enim aperiam inventore aliquam fugiat perferendis quisquam id placeat dignissimos nostrum voluptates ipsum nobis pariatur nesciunt doloribus alias.
+        </section>
+        <aside class="bdr">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, fuga.
+        </aside>
+        <footer class="bdr">
+            Copyright &copy;
+        </footer>
+    </div>
+</body>
+</html>

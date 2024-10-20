@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        color: white;
+    }
+    header::before{
+        width: 100%;
+        height: 100%;
+        content: "";
+        top:0;
+        left: 0;
+        background: url('https://images.unsplash.com/photo-1726715245558-69afa5ded798?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+        position: absolute;
+        z-index: -1;
+        opacity: 0.3;
+    }
+    .navigation{
+        display: flex;
+    }
+    li{
+        list-style: none;
+        padding: 20px 23px;
+    }
+    section{
+        margin:3px 50px;
+        height: 322px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    h1{
+        font-size: 4em;
+    }
+    p{
+        text-align: center;
+    }
+</style>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Contact Us</li>
+                <li class="item">Help</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>
+            Welcome to Store
+        </h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Doloribus iste itaque esse suscipit quia, quo, nihil quod labore laboriosam odit 
+            repellat! Accusamus autem animi nostrum non dolorem delectus accusantium laboriosam omnis 
+            libero assumenda pariatur, tenetur explicabo saepe veniam. Totam quos esse explicabo animi sed
+             provident inventore itaque vel impedit iusto!
+        </p>
+    </section>
+</body>
+</html>

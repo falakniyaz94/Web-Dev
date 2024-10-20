@@ -1,0 +1,51 @@
+<!-- CSS selectors are used to find the element whose
+property will be set -->
+<!-- Selectors are used to target the html elements -->
+<!-- selectors makes it easy for us to easily target single/multiple 
+HTML elements in the markup-->
+<!-- CSS element Selector -->
+<!-- CSS id Selector -->
+<!-- CSS class Selector -->
+<!-- The CSS grouping Selector -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Element selector */
+        p{
+            border: 2px solid red;
+        }
+        /* id selector:is always unique */
+        #firstpara{
+            color: green;
+        }
+        /* class selector */
+        .bgblue{
+            color:yellow;
+            background-color:blue;
+        }
+        /* group selector */
+        footer,span{
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <h3>CSS Selectors</h3>
+    <p id="firstpara">This is a simple paragraph to demonstrate css selectors
+    </p>
+    <p id="secondpara" class="blue_element bgblue">This is a simple paragraph to demonstrate css selectors
+    </p>
+    <div>
+        <p>This is a simple paragraph to demonstrate css selectors
+        </p>
+        <span>this is span</span>
+    </div>
+    <footer>
+        This is footer
+    </footer>
+</body>
+</html>

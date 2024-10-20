@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        border: 2px solid black;
+        width: 100%;
+        height: 500px;
+        display: flex;
+        /* flex-wrap: wrap-reverse; */
+        /* flex-wrap: wrap; */
+        /* flex-direction: column; */
+        /* flex-direction: row-reverse; */
+        /* justify-content: space-between;
+        justify-content: space-evenly;
+        justify-content: space-around; */
+        /* align-items: center; */
+        /* align-items: flex-end; */
+        /* align-items: flex-start; */
+        flex-flow: row-reverse wrap;
+        align-items: stretch;
+    }
+    .item{
+        margin: 2px;
+        height: 100px;
+        width: 100px;
+        border: 2px solid green;
+        background-color: tomato;
+    }
+    #item1{
+        /* order: 2; */
+        /* flex-grow:5 ;
+        flex-shrink:3 ;
+        flex-basis: 200px; */
+    }
+    #item2{
+        /* flex-grow:1 ;
+        flex-shrink:1 ; */
+        /* align-self: flex-start;
+        align-self: flex-end;
+        align-self: center; */
+    }
+    #item3{
+
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="item" id="item1">first</div>
+        <div class="item" id="item2">second</div>
+        <div class="item" id="item3">third</div>
+        <div class="item" id="item4">fourth</div>
+        <div class="item" id="item5">fifth</div>
+        <div class="item" id="item6">sixth</div>
+    </div>
+</body>
+</html>

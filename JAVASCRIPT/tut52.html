@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and object</title>
+</head>
+<body>
+    <div class="containner">simple html</div>
+    <script>
+        let myVar =34;//primitive
+        let myVar2="string";//primitive
+        let myVar3 =true;//primitive
+        let myVar4= null;//primitive
+        let myVar5=undefined;//primitive
+        //primitives ke alawa jo bhi kuch banate hai vo objects hota hai
+
+        //object stores key value pairs
+        let employee={
+            name:"falak",
+            rollno:1,
+            branch:"IT"
+        }
+        console.log(employee);
+        
+        //ARRAY is a special kind of object
+        let names =[5,2,4,"Falak",undefined];
+        //let names = new Array(23)
+        // let names =new Array(1,2,4,"Falak",undefined);
+        console.log(names);
+        console.log(names[0]);
+        console.log(names.length);
+        names =names.sort();
+        console.log(names);
+        names.push("this is pushed");
+        // console.log(names);
+        document.write(names);
+
+        console.log(employee.branch);
+        console.log(employee["name"]);
+
+    </script>
+</body> 
+</html>

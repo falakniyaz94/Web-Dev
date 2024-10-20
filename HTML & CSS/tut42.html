@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .grid{
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(4,4fr);
+    }
+    .box:first-child{
+        /*grid-column-start: 1;
+        grid-column-end: 3;*/
+        grid-column: 1/ span 3;
+        grid-row: 1/ span 4;
+    }
+    .box{
+        padding: 5px;
+        background-color: rgb(196, 196, 231);
+        border: 2px solid black;
+    }
+</style>
+<body>
+    <div class="grid">
+        <div class="box">item-1</div>
+        <div class="box">item-2</div>
+        <div class="box">item-3</div>
+        <div class="box">item-4</div>
+        <div class="box">item-5</div>
+        <div class="box">item-6</div>
+        <div class="box">item-7</div>
+        <div class="box">item-8</div>
+        <div class="box">item-9</div>
+        <div class="box">item-10</div>
+    </div>
+</body>
+</html>
